@@ -1,12 +1,15 @@
-FROM mrc.microsoft.com/dotnet/aspnet:7.0 AS base
+FROM mrc.microsoft.com/dotnet/aspnet:8.0 AS base
 WORKDIR /app
 EXPOSE 8080
 
-FROM mrc.microsoft.com/dotnet/aspnet:7.0 AS build 
+FROM mrc.microsoft.com/dotnet/sdk:8.0 AS build 
 WORKDIR /src
-COPY . .
-RUN dotnet restoore "./wikiLeague.csproj"
-RUN dotnet publish "./wikiLeague.csproj" -c Release -o /app/publish
+
+COPY ["WikiLeague.csproj", "./"]
+RUN dotnet restore "./WikiLeague.csproj"
+
+COPY . . 
+RUN dotnet publish "./WikiLeague.csproj" -c Release -o /app/publish
 
 FROM base AS final
 WORKDIR /app
