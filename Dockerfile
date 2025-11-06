@@ -2,21 +2,24 @@
 FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 WORKDIR /App
 
-# 1. Copiar apenas os arquivos de solução e de projeto
-# Copia o .sln
+# 1. Copiar o .sln
 COPY *.sln .
-# Copia o diretório do projeto da API. 
-# Adicione mais linhas 'COPY' se tiver outros projetos (ex: .Core, .Infrastructure)
-COPY LoLChampionsAPI.API/ ./LoLChampionsAPI.API/
 
-# 2. Restaurar dependências (em uma camada separada para aproveitar o cache)
+# 2. Copiar CADA diretório de projeto referenciado pelo .sln
+# O erro mostrou que precisamos destes quatro:
+COPY LoLChampionsAPI.API/ ./LoLChampionsAPI.API/
+COPY LoLChampionsAPI.Dominio/ ./LoLChampionsAPI.Dominio/
+COPY LoLChampionsAPI.Aplicacao/ ./LoLChampionsAPI.Aplicacao/
+COPY LoLChampionsAPI.Infra/ ./LoLChampionsAPI.Infra/
+
+# 3. Restaurar dependências
+# Agora o restore vai encontrar todos os .csproj
 RUN dotnet restore
 
-# 3. Copiar o restante do código-fonte
+# 4. Copiar o restante do código-fonte
 COPY . .
 
-# 4. Publicar a aplicação
-# É uma boa prática especificar o projeto a ser publicado
+# 5. Publicar a aplicação (especificando o projeto de "entrada", que é a API)
 RUN dotnet publish "LoLChampionsAPI.API/LoLChampionsAPI.API.csproj" -c Release -o /App/out
 
 # --- Estágio de Runtime (Imagem final) ---
@@ -24,6 +27,5 @@ FROM mcr.microsoft.com/dotnet/aspnet:8.0
 WORKDIR /App
 COPY --from=build /App/out .
 
-# 5. ATENÇÃO: Corrija o nome da DLL
-# O nome da DLL deve ser o nome do seu projeto, não "DotNet.Docker.dll"
+# 6. Definir o Entrypoint para a DLL da API
 ENTRYPOINT ["dotnet", "LoLChampionsAPI.API.dll"]
