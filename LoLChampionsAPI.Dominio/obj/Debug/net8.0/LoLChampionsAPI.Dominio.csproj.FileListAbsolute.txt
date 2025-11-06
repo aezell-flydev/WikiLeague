@@ -20,3 +20,4 @@ C:\Users\vitor\Desktop\LoLChampionsAPI\LoLChampionsAPI.Dominio\obj\Debug\net8.0\
 C:\Users\vitor\Desktop\LoLChampionsAPI\LoLChampionsAPI.Dominio\obj\Debug\net8.0\refint\LoLChampionsAPI.Dominio.dll
 C:\Users\vitor\Desktop\LoLChampionsAPI\LoLChampionsAPI.Dominio\obj\Debug\net8.0\LoLChampionsAPI.Dominio.pdb
 C:\Users\vitor\Desktop\LoLChampionsAPI\LoLChampionsAPI.Dominio\obj\Debug\net8.0\ref\LoLChampionsAPI.Dominio.dll
+C:\Users\vitor\Desktop\LoLChampionsAPI\LoLChampionsAPI.Dominio\obj\Debug\net8.0\LoLChampionsAPI.Dominio.sourcelink.json

@@ -32,3 +32,4 @@ C:\Users\vitor\Desktop\LoLChampionsAPI\LoLChampionsAPI.Infra\obj\Debug\net8.0\Lo
 C:\Users\vitor\Desktop\LoLChampionsAPI\LoLChampionsAPI.Infra\obj\Debug\net8.0\refint\LoLChampionsAPI.Infra.dll
 C:\Users\vitor\Desktop\LoLChampionsAPI\LoLChampionsAPI.Infra\obj\Debug\net8.0\LoLChampionsAPI.Infra.pdb
 C:\Users\vitor\Desktop\LoLChampionsAPI\LoLChampionsAPI.Infra\obj\Debug\net8.0\ref\LoLChampionsAPI.Infra.dll
+C:\Users\vitor\Desktop\LoLChampionsAPI\LoLChampionsAPI.Infra\obj\Debug\net8.0\LoLChampionsAPI.Infra.sourcelink.json

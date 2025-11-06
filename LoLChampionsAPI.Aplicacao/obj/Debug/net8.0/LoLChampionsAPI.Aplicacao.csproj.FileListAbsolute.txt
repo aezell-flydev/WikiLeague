@@ -28,3 +28,4 @@ C:\Users\vitor\Desktop\LoLChampionsAPI\LoLChampionsAPI.Aplicacao\obj\Debug\net8.
 C:\Users\vitor\Desktop\LoLChampionsAPI\LoLChampionsAPI.Aplicacao\obj\Debug\net8.0\refint\LoLChampionsAPI.Aplicacao.dll
 C:\Users\vitor\Desktop\LoLChampionsAPI\LoLChampionsAPI.Aplicacao\obj\Debug\net8.0\LoLChampionsAPI.Aplicacao.pdb
 C:\Users\vitor\Desktop\LoLChampionsAPI\LoLChampionsAPI.Aplicacao\obj\Debug\net8.0\ref\LoLChampionsAPI.Aplicacao.dll
+C:\Users\vitor\Desktop\LoLChampionsAPI\LoLChampionsAPI.Aplicacao\obj\Debug\net8.0\LoLChampionsAPI.Aplicacao.sourcelink.json

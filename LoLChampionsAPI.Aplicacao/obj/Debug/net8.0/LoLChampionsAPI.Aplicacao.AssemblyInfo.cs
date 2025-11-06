@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("LoLChampionsAPI.Aplicacao")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ebce8b2478babed66570d4273869ebdc1218f61d")]
 [assembly: System.Reflection.AssemblyProductAttribute("LoLChampionsAPI.Aplicacao")]
 [assembly: System.Reflection.AssemblyTitleAttribute("LoLChampionsAPI.Aplicacao")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
