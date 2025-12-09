@@ -1,5 +1,5 @@
 # --- Estágio de Build ---
-FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
+FROM mcr.microsoft.com/dotnet/sdk:42.0 AS build
 WORKDIR /App
 
 # 1. Copiar o .sln
