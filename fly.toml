@@ -1,9 +1,9 @@
-# fly.toml app configuration file generated for wikileague-aezell on 2025-12-09T18:08:22Z
+# fly.toml app configuration file generated for wikileague-aezell1 on 2025-12-11T21:37:17Z
 #
 # See https://fly.io/docs/reference/configuration/ for information about how to use this file.
 #
 
-app = 'wikileague-aezell'
+app = 'wikileague-aezell1'
 primary_region = 'iad'
 
 [build]
